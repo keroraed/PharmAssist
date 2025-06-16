@@ -80,6 +80,11 @@ namespace PharmAssist.Helpers
 				.ForMember(d => d.Total, o => o.MapFrom(s => s.Price * s.Quantity));
 
 			CreateMap<Core.Entities.Order_Aggregation.Address, AddressDTO>();
+
+			// Add mapping for MedicationRecommendation
+			CreateMap<MedicationRecommendation, MedicationRecommendationDTO>()
+				.ForMember(d => d.ProductPictureUrl, o => o.MapFrom<RecommendationPictureUrlResolver>())
+				.ForMember(d => d.ActiveIngredient, o => o.MapFrom(s => s.Product.ActiveIngredient));
 		}
 	}
 }

@@ -69,24 +69,7 @@ namespace PharmAssist.Controllers
                 var recommendations = await _recommendationService.GenerateRecommendationsAsync(userId, includeConflicted, maxResults);
                 var (totalSafe, totalConflicted, summary) = await _recommendationService.GetSafetySummaryAsync(userId);
 
-                var recommendationDTOs = recommendations.Select(r => new MedicationRecommendationDTO
-                {
-                    Id = r.Id,
-                    ProductId = r.ProductId,
-                    ProductName = r.Product?.Name ?? "",
-                    ProductDescription = r.Product?.Description ?? "",
-                    ProductPrice = r.Product?.Price ?? 0,
-                    ProductPictureUrl = r.Product?.PictureUrl ?? "",
-                    ActiveIngredient = r.Product?.ActiveIngredient ?? "",
-                    SafetyScore = r.SafetyScore,
-                    EffectivenessScore = r.EffectivenessScore,
-                    ValueScore = r.ValueScore,
-                    FinalScore = r.FinalScore,
-                    HasConflict = r.HasConflict,
-                    ConflictDetails = r.ConflictDetails,
-                    RecommendationReason = r.RecommendationReason,
-                    CreatedAt = r.CreatedAt
-                }).ToList();
+                var recommendationDTOs = _mapper.Map<List<MedicationRecommendationDTO>>(recommendations);
 
                 var response = new RecommendationResponseDTO
                 {
@@ -150,24 +133,7 @@ namespace PharmAssist.Controllers
                 MedicationRecommendationDTO? topRecommendationDTO = null;
                 if (topRecommendation != null)
                 {
-                    topRecommendationDTO = new MedicationRecommendationDTO
-                    {
-                        Id = topRecommendation.Id,
-                        ProductId = topRecommendation.ProductId,
-                        ProductName = topRecommendation.Product?.Name ?? "",
-                        ProductDescription = topRecommendation.Product?.Description ?? "",
-                        ProductPrice = topRecommendation.Product?.Price ?? 0,
-                        ProductPictureUrl = topRecommendation.Product?.PictureUrl ?? "",
-                        ActiveIngredient = topRecommendation.Product?.ActiveIngredient ?? "",
-                        SafetyScore = topRecommendation.SafetyScore,
-                        EffectivenessScore = topRecommendation.EffectivenessScore,
-                        ValueScore = topRecommendation.ValueScore,
-                        FinalScore = topRecommendation.FinalScore,
-                        HasConflict = topRecommendation.HasConflict,
-                        ConflictDetails = topRecommendation.ConflictDetails,
-                        RecommendationReason = topRecommendation.RecommendationReason,
-                        CreatedAt = topRecommendation.CreatedAt
-                    };
+                    topRecommendationDTO = _mapper.Map<MedicationRecommendationDTO>(topRecommendation);
                 }
 
                 var response = new SafetySummaryDTO
@@ -209,24 +175,7 @@ namespace PharmAssist.Controllers
                 }
 
                 var recommendation = await _recommendationService.AnalyzeProductSafetyAsync(product, userId);
-                var recommendationDTO = new MedicationRecommendationDTO
-                {
-                    Id = recommendation.Id,
-                    ProductId = recommendation.ProductId,
-                    ProductName = product.Name,
-                    ProductDescription = product.Description,
-                    ProductPrice = product.Price,
-                    ProductPictureUrl = product.PictureUrl,
-                    ActiveIngredient = product.ActiveIngredient,
-                    SafetyScore = recommendation.SafetyScore,
-                    EffectivenessScore = recommendation.EffectivenessScore,
-                    ValueScore = recommendation.ValueScore,
-                    FinalScore = recommendation.FinalScore,
-                    HasConflict = recommendation.HasConflict,
-                    ConflictDetails = recommendation.ConflictDetails,
-                    RecommendationReason = recommendation.RecommendationReason,
-                    CreatedAt = recommendation.CreatedAt
-                };
+                var recommendationDTO = _mapper.Map<MedicationRecommendationDTO>(recommendation);
 
                 return Ok(recommendationDTO);
             }
@@ -333,24 +282,7 @@ namespace PharmAssist.Controllers
                 }
 
                 // Convert to DTOs
-                var conflictingMedicationDTOs = conflictingMedications.Select(r => new MedicationRecommendationDTO
-                {
-                    Id = r.Id,
-                    ProductId = r.ProductId,
-                    ProductName = r.Product?.Name ?? "",
-                    ProductDescription = r.Product?.Description ?? "",
-                    ProductPrice = r.Product?.Price ?? 0,
-                    ProductPictureUrl = r.Product?.PictureUrl ?? "",
-                    ActiveIngredient = r.Product?.ActiveIngredient ?? "",
-                    SafetyScore = r.SafetyScore,
-                    EffectivenessScore = r.EffectivenessScore,
-                    ValueScore = r.ValueScore,
-                    FinalScore = r.FinalScore,
-                    HasConflict = r.HasConflict,
-                    ConflictDetails = r.ConflictDetails,
-                    RecommendationReason = r.RecommendationReason,
-                    CreatedAt = r.CreatedAt
-                }).ToList();
+                var conflictingMedicationDTOs = _mapper.Map<List<MedicationRecommendationDTO>>(conflictingMedications);
 
                 // Generate conflict warnings based on chronic conditions
                 var conflictWarnings = GenerateChronicConditionWarnings(chronicConditions);
@@ -496,24 +428,7 @@ namespace PharmAssist.Controllers
                 var recommendations = await _recommendationService.GenerateRecommendationsAsync(userId, includeConflicted, maxResults);
                 var (totalSafe, totalConflicted, summary) = await _recommendationService.GetSafetySummaryAsync(userId);
 
-                var recommendationDTOs = recommendations.Select(r => new MedicationRecommendationDTO
-                {
-                    Id = r.Id,
-                    ProductId = r.ProductId,
-                    ProductName = r.Product?.Name ?? "",
-                    ProductDescription = r.Product?.Description ?? "",
-                    ProductPrice = r.Product?.Price ?? 0,
-                    ProductPictureUrl = r.Product?.PictureUrl ?? "",
-                    ActiveIngredient = r.Product?.ActiveIngredient ?? "",
-                    SafetyScore = r.SafetyScore,
-                    EffectivenessScore = r.EffectivenessScore,
-                    ValueScore = r.ValueScore,
-                    FinalScore = r.FinalScore,
-                    HasConflict = r.HasConflict,
-                    ConflictDetails = r.ConflictDetails,
-                    RecommendationReason = r.RecommendationReason,
-                    CreatedAt = r.CreatedAt
-                }).ToList();
+                var recommendationDTOs = _mapper.Map<List<MedicationRecommendationDTO>>(recommendations);
 
                 var response = new RecommendationResponseDTO
                 {

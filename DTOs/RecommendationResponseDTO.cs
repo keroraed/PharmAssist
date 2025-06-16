@@ -8,7 +8,7 @@ namespace PharmAssist.DTOs
 {
     public class RecommendationResponseDTO
     {
-        public IReadOnlyList<MedicationRecommendationDTO> Recommendations { get; set; }
+        public List<MedicationRecommendationDTO> Recommendations { get; set; } = new List<MedicationRecommendationDTO>();
         public string Summary { get; set; } = string.Empty;
         public int TotalSafeRecommendations { get; set; }
         public int TotalConflictedItems { get; set; }
