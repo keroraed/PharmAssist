@@ -13,18 +13,6 @@
       "PackagePath": "staticwebassets\\Images\\Products\\Betnovate.png"
     },
     {
-      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Duphaston.png",
-      "PackagePath": "staticwebassets\\Images\\Products\\Duphaston.png"
-    },
-    {
-      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Elocon.png",
-      "PackagePath": "staticwebassets\\Images\\Products\\Elocon.png"
-    },
-    {
-      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Ferro-Gradumet.png",
-      "PackagePath": "staticwebassets\\Images\\Products\\Ferro-Gradumet.png"
-    },
-    {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Ketoral.png",
       "PackagePath": "staticwebassets\\Images\\Products\\Ketoral.png"
     },
@@ -39,10 +27,6 @@
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Singulair.png",
       "PackagePath": "staticwebassets\\Images\\Products\\Singulair.png"
-    },
-    {
-      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Solpadeine.png",
-      "PackagePath": "staticwebassets\\Images\\Products\\Solpadeine.png"
     },
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Stilnox.png",
@@ -289,6 +273,14 @@
       "PackagePath": "staticwebassets\\Images\\Products\\dostinex.png"
     },
     {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\duphaston.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\duphaston.png"
+    },
+    {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\elocon.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\elocon.png"
+    },
+    {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\euthyrox.png",
       "PackagePath": "staticwebassets\\Images\\Products\\euthyrox.png"
     },
@@ -309,8 +301,16 @@
       "PackagePath": "staticwebassets\\Images\\Products\\feldene.png"
     },
     {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\ferro-gradumet.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\ferro-gradumet.png"
+    },
+    {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\flagyl.png",
       "PackagePath": "staticwebassets\\Images\\Products\\flagyl.png"
+    },
+    {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\flu-out.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\flu-out.png"
     },
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\folic-acid-5mg.png",
@@ -501,8 +501,8 @@
       "PackagePath": "staticwebassets\\Images\\Products\\otrivin.png"
     },
     {
-      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-cold&flu.png",
-      "PackagePath": "staticwebassets\\Images\\Products\\panadol-cold&flu.png"
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-cold-flu.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\panadol-cold-flu.png"
     },
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-extra.png",
@@ -571,6 +571,10 @@
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\smecta.png",
       "PackagePath": "staticwebassets\\Images\\Products\\smecta.png"
+    },
+    {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\solpadeine.png",
+      "PackagePath": "staticwebassets\\Images\\Products\\solpadeine.png"
     },
     {
       "Id": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\spasmo-digestin.png",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "krpNGjb+y1r8Sv5Fybj00TmCPBz2tSnTclPWPn8jKdE=",
+  "Hash": "Mx26O0zMGBksGU0n5OGPxc06i7WFePBZoEWTBqz01TI=",
   "Source": "PharmAssist",
   "BasePath": "_content/PharmAssist",
   "Mode": "Default",
@@ -1233,12 +1233,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\dostinex.png"
     },
     {
-      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Duphaston.png",
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\duphaston.png",
       "SourceId": "PharmAssist",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
       "BasePath": "_content/PharmAssist",
-      "RelativePath": "Images/Products/Duphaston.png",
+      "RelativePath": "Images/Products/duphaston.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1249,15 +1249,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\Duphaston.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\duphaston.png"
     },
     {
-      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Elocon.png",
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\elocon.png",
       "SourceId": "PharmAssist",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
       "BasePath": "_content/PharmAssist",
-      "RelativePath": "Images/Products/Elocon.png",
+      "RelativePath": "Images/Products/elocon.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1268,7 +1268,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\Elocon.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\elocon.png"
     },
     {
       "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\euthyrox.png",
@@ -1366,12 +1366,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\feldene.png"
     },
     {
-      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Ferro-Gradumet.png",
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\ferro-gradumet.png",
       "SourceId": "PharmAssist",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
       "BasePath": "_content/PharmAssist",
-      "RelativePath": "Images/Products/Ferro-Gradumet.png",
+      "RelativePath": "Images/Products/ferro-gradumet.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1382,7 +1382,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\Ferro-Gradumet.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\ferro-gradumet.png"
     },
     {
       "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\flagyl.png",
@@ -1402,6 +1402,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\flagyl.png"
+    },
+    {
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\flu-out.png",
+      "SourceId": "PharmAssist",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
+      "BasePath": "_content/PharmAssist",
+      "RelativePath": "Images/Products/flu-out.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\flu-out.png"
     },
     {
       "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\folic-acid-5mg.png",
@@ -2316,12 +2335,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\otrivin-nasal-drops.png"
     },
     {
-      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-cold&flu.png",
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-cold-flu.png",
       "SourceId": "PharmAssist",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
       "BasePath": "_content/PharmAssist",
-      "RelativePath": "Images/Products/panadol-cold&flu.png",
+      "RelativePath": "Images/Products/panadol-cold-flu.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2332,7 +2351,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\panadol-cold&flu.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\panadol-cold-flu.png"
     },
     {
       "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\panadol-extra.png",
@@ -2715,12 +2734,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Products\\smecta.png"
     },
     {
-      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\Solpadeine.png",
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\solpadeine.png",
       "SourceId": "PharmAssist",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
       "BasePath": "_content/PharmAssist",
-      "RelativePath": "Images/Products/Solpadeine.png",
+      "RelativePath": "Images/Products/solpadeine.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2731,7 +2750,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Products\\Solpadeine.png"
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\solpadeine.png"
     },
     {
       "Identity": "D:\\Project\\PharmAssist\\wwwroot\\Images\\Products\\spasmo-digestin.png",
