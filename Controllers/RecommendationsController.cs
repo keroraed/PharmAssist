@@ -168,6 +168,27 @@ namespace PharmAssist.Controllers
                     return Unauthorized("User not authenticated");
                 }
 
+                // Check if user profile is complete
+                var user = await _userManager.FindByIdAsync(userId);
+                if (user == null)
+                {
+                    return NotFound("User not found");
+                }
+
+                if (!_recommendationService.IsUserProfileComplete(user))
+                {
+                    var incompleteResponse = new ProfileIncompleteResponseDTO
+                    {
+                        IsProfileComplete = false,
+                        Title = "Complete Your Medical Profile",
+                        Message = "To provide you with personalized and safe medication recommendations, we need some information about your medical history.",
+                        MissingFields = GetMissingFields(user),
+                        ActionRequired = "Please complete your medical profile by answering the health questionnaire.",
+                        GeneratedAt = DateTime.UtcNow
+                    };
+                    return Ok(incompleteResponse);
+                }
+
                 var product = await _unitOfWork.Repository<Product>().GetByIdAsync(productId);
                 if (product == null)
                 {

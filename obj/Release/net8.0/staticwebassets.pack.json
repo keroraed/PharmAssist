@@ -681,6 +681,10 @@
       "PackagePath": "staticwebassets\\admin-dashboard.html"
     },
     {
+      "Id": "D:\\Project\\PharmAssist\\wwwroot\\privacy.html",
+      "PackagePath": "staticwebassets\\privacy.html"
+    },
+    {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.PharmAssist.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

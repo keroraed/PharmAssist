@@ -8,6 +8,7 @@ namespace PharmAssist.DTOs
         public int PendingOrders { get; set; }
         public int OutForDeliveryOrders { get; set; }
         public int DeliveredOrders { get; set; }
+        public int CancelledOrders { get; set; }
         public decimal TotalRevenue { get; set; }
         public IEnumerable<AdminOrderSummaryDTO> RecentOrders { get; set; }
     }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4tjPhfqOF8Df1r+Mah0arTL3ZoFg+Gp8Aje9D0PIZuE=",
+  "Hash": "Fx42G2HGTSKnfp5rFKr509wl0j6RTgEMUu3+7hYm7bQ=",
   "Source": "PharmAssist",
   "BasePath": "_content/PharmAssist",
   "Mode": "Default",
@@ -3245,6 +3245,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Products\\zyrtec.png"
+    },
+    {
+      "Identity": "D:\\Project\\PharmAssist\\wwwroot\\privacy.html",
+      "SourceId": "PharmAssist",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\PharmAssist\\wwwroot\\",
+      "BasePath": "_content/PharmAssist",
+      "RelativePath": "privacy.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\privacy.html"
     }
   ]
 }

@@ -55,6 +55,9 @@ namespace PharmAssist.Controllers
             var deliveredOrders = await _unitOfWork.Repository<Order>()
                 .CountAsync(o => o.Status == OrderStatus.Delivered);
 
+            var cancelledOrders = await _unitOfWork.Repository<Order>()
+                .CountAsync(o => o.Status == OrderStatus.Cancelled);
+
             // Calculate total revenue from out for delivery and delivered orders
             var orders = await _unitOfWork.Repository<Order>().GetAllAsync();
             var totalRevenue = orders
@@ -75,6 +78,7 @@ namespace PharmAssist.Controllers
                 PendingOrders = pendingOrders,
                 OutForDeliveryOrders = outForDeliveryOrders,
                 DeliveredOrders = deliveredOrders,
+                CancelledOrders = cancelledOrders,
                 TotalRevenue = totalRevenue,
                 RecentOrders = recentOrdersDto
             });
@@ -241,7 +245,7 @@ namespace PharmAssist.Controllers
         {
             var orders = await _unitOfWork.Repository<Order>()
                 .GetAsync(
-                    o => status == null || o.Status == status,
+                    o => !status.HasValue || o.Status == status.Value,
                     o => o.OrderByDescending(x => x.OrderDate),
                     "Items,DeliveryMethod",
                     pageSize,
